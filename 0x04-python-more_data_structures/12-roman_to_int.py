@@ -10,24 +10,6 @@ def roman_to_int(roman_string: str):
         if numbers[i] >= numbers[i+1]:
             rep += numbers[i]
         else:
-            rep -= numbers[i]
+         rep -= numbers[i]
 
     return rep
-
-
-Advance task
-vi 100-weight_average.py
-
-#!/usr/bin/python3
-def weight_average(my_list=[]):
-    if not my_list:
-        return 0
-
-    num = 0
-    den = 0
-
-    for tup in my_list:
-        num += tup[0] * tup[1]
-        den += tup[1]
-
-    return (num / den)
